@@ -1,6 +1,9 @@
 name: Build ESP-AT Project
 # trigger build
-on: push
+on: 
+  push:
+    branches: [ master, main ]
+  workflow_dispatch:
 
 jobs:
   build-esp32-wroom-at:
